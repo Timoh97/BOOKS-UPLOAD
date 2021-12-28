@@ -1,10 +1,10 @@
 from django import forms
-from .models import Movies
+from .models import Books
 
 
 # Create your forms here.
-class MovieForm(forms.ModelForm):
+class BookForm(forms.ModelForm):
 
     class Meta:
-        model = Movies
+        model = Books
         fields = ('file', 'image','author',"year_published",'title')
